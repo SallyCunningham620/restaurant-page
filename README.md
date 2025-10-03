@@ -44,3 +44,5 @@ in .json scripts
 use npm start
 
 npm i --save-dev style-loader css-loader
+
+use npx webpack serve

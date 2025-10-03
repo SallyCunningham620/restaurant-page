@@ -1,3 +1,9 @@
+import image1 from './img/leanna-myers-unsplash.jpg';
+import image2 from './img/emanuel-ekstrom-unsplash.jpg';
+import image3 from './img/pixzolo-photography-unsplash.jpg';
+import image4 from './img/eaters-collective-unsplash.jpg';
+
+
 function setBtnActive(id) {
   const activeBtn = document.querySelector('.tab.active');
   if (activeBtn) activeBtn.classList.remove('active');
@@ -40,52 +46,28 @@ function loadMenu() {
 
   const foods = [
     createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2018/07/ackbar-ice-cream-tall.jpg',
+      image1,
       'Classic Mac',
       '$8.00',
-      'Mac and Cheese'
+      'Mac and Cheese on Unsplash by Leanna Myers'
     ),
     createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2019/06/corellian-coffee-tall.jpg',
+      image2,
       'Pesto Mac and Cheese',
-      '4CR',
-      'corellian coffee'
+      '$10.00',
+      'Pesto Mac and Cheese on Unsplash by Emanuel Ekstrom'
     ),
     createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2019/03/darth-maul-quinoa-tall.jpg',
+      image3,
       'Grilled Mac and Cheese',
-      '20CR',
-      'darth maul quinoa'
+      '$10.00',
+      'Grilled Mac and Cheese on Unsplash by Pixzolo Photography'
     ),
     createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2018/10/ewok-cookies-tall.jpg',
+      image4,
       'Creamy Chicken Pasta',
-      '4CR',
-      'ewok cookies'
-    ),
-    createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2018/12/lemon-tart-tall.jpg',
-      'lemon tart',
-      '6CR',
-      'lemon tart'
-    ),
-    createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2018/03/porg-puffs-tall.jpg',
-      'porg puffs',
-      '12CR',
-      'porg puffs'
-    ),
-    createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2019/08/sith-trooper-float-tall-b.jpg',
-      'sith trooper root beer',
-      '9CR',
-      'sith trooper root beer'
-    ),
-    createFood(
-      'https://starwarsblog.starwars.com/wp-content/uploads/2019/06/vader-peanut-butter-blossoms-tall.jpg',
-      'vader peanut butter blossoms',
-      '20CR',
-      'vader peanut butter blossoms'
+      '$15.00',
+      'Chicken Pasta on Unsplash by Eaters Collective'
     )
   ];
 

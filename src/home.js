@@ -11,7 +11,7 @@ function createAboutSection() {
   const para = document.createElement('p');
   para.classList.add('section-description');
   para.textContent =
-    'For the love of cheese. Stringy, stretchy, squishy, creamy, delicious Mac and Cheese. Who wants some of this amazing food? I sure do!';
+    'For the love of cheese. Stringy, stretchy, squishy, creamy, delicious Mac and Cheese.\nWho wants some of this amazing food? I sure do!';
 
   about.appendChild(para);
   return about;
