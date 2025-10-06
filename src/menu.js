@@ -2,15 +2,7 @@ import image1 from './img/leanna-myers-unsplash.jpg';
 import image2 from './img/emanuel-ekstrom-unsplash.jpg';
 import image3 from './img/pixzolo-photography-unsplash.jpg';
 import image4 from './img/eaters-collective-unsplash.jpg';
-
-
-function setBtnActive(id) {
-  const activeBtn = document.querySelector('.tab.active');
-  if (activeBtn) activeBtn.classList.remove('active');
-
-  const homeBtn = document.getElementById(id);
-  homeBtn.classList.add('active');
-}
+import setBtnActive from './btnActive';
 
 function createFood(src, text, price, alt) {
   const food = document.createElement('div');

@@ -1,10 +1,5 @@
-function setBtnActive(id) {
-  const activeBtn = document.querySelector('.tab.active');
-  if (activeBtn) activeBtn.classList.remove('active');
+import setBtnActive from './btnActive';
 
-  const homeBtn = document.getElementById(id);
-  homeBtn.classList.add('active');
-}
 function createSection(name, data) {
   const section = document.createElement('section');
   section.classList.add('section');
@@ -31,13 +26,14 @@ function loadContact() {
   content.textContent = '';
   setBtnActive('contact');
 
+  const hoursSection = createSection('Hours', ['11:00 AM to 9:00 PM']);
   const phoneSection = createSection('Phones', [
-    '$ Oz92-12j-2jda1',
-    '# Oz92-34d-80c13'
+    '(1) 123-456-7890'
   ]);
 
-  const addressSection = createSection('address', ['unknown regions']);
+  const addressSection = createSection('Location', ['Muscatine, Iowa 52761']);
 
+  content.appendChild(hoursSection);
   content.appendChild(phoneSection);
   content.appendChild(addressSection);
 }
